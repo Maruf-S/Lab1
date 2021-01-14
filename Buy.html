@@ -15,6 +15,9 @@
         #MySlide{
             width: 70%;
     }
+    #pricing{
+        color: blue;
+    }
     /* ul {
     padding-left: 0;
     }​ */
@@ -53,71 +56,41 @@
             </ul>
         </div>
     </nav>
-    <div>
-    <div class="jumbotron" >
-
-        <h4>Welcome to Addis Shoe</h4>
-  
-        <p>We Provide various types of shoes around the city , enjoy viewing our website
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident at inventore ,</p>
-  
-           <hr class="my-4">
-  
-           <a  class="btn btn-outline-info btn-lg" href="about.html">About Us</a>
-           <a  class="btn btn-info btn-lg" href="service.html">Service</a>
-  
-    </div>
-</div>
-<div class="row text-center m-4">
-    <div class="col-4 p-3 mb-5">
-                 <p>✅✅</p>
-                 <p class="font-weight-bold"> Beauty In your Eye</p>
-                 <p>Our Products have the best aesthetics in the world that can attract any body</p>
-      </div>
- 
-       <div class="col-4 p-3 mb-5">
-                 <p>💁‍♀️💁‍♀️</p>
-                 <p class="font-weight-bold"> Comfortable for your Foot</p>
-                 <p>Our Products have the the most comfort for you and your health</p>
-         </div>
- 
-          <div class="col-4 p-3 mb-5">
-                 <p>🦍🦍</p>
-                 <p class="font-weight-bold"> Guarantee for Years </p>
-                 <p>Our Products have one year warranty if you want to change of your shopping</p>
+    <h3 class="display-4 pl-3">Checkout</h3>
+    <hr />
+    <div class="row container"> 
+        <div class="col-md-4">
+            <div class="card shadow">
+              <img class="card-img-top img-fluid" src="./assets/Img/Glowie.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Nike-R7</h5>
+                <p class="card-text">Nike-R7 with LED strip laces</p>
+                <p class="card-subtitle" id="pricing">56.99£</p>                
+              </div>
+             </div>
            </div>
+           <div class="col-md-8">
+               <p>Payment options</p>
+               <form action="POST">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        <i class="fab fa-paypal">&nbsp;</i>Paypal
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        <i class="fab fa-bitcoin">&nbsp;</i> Bitcoin
+                    </label>
+                  </div>
+                  <br />
+                  <button class="btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+               </form>
+           </div>
+          </div>
     </div>
-    <!-- Some of the products from store -->
-<div id="MySlide" class="carousel slide my-4 container-fluid" data-ride="carousel">
-    <ol class="carousel-indicators">
-          <li data-target="#MySlide" data-slide-to="0" class="active"></li>
-          <li data-target="#MySlide" data-slide-to="1"></li>
-          <li data-target="#MySlide" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/Shoe1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/Shoe1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/Shoe1.jpg" class="d-block w-100" alt="...">
-            </div>
-     </div>
-
-    <a class="carousel-control-prev" href="#MySlide" role="button" data-slide="prev">
-       <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
-       <span class="sr-only">Previous</span>
-     </a>
-     <a class="carousel-control-next" href="#MySlide" role="button" data-slide="next">
-       <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
-       <span class="sr-only">Next</span>
-     </a>
-    
-    </div>
-    
-    <footer class="container-fluid sticky-bottom" style="background-color: #16304e; color:white;">
+    <footer class="container-fluid fixed-bottom pt-3" style="background-color: #16304e; color:white;">
         <div class="row">
             <div class="col-md-4">
                 <h3>Heading</h3>
